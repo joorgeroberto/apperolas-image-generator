@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+// import image from './images/jorge.jpg';
+import image from './images/domingos.jpeg';
+
 import './App.css';
+import { Canvas } from './Canvas';
+import AnimatedCanvas from './AnimatedCanvas';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Canvas
+      imageToShow={image}
+      textToShow={"I've logged bugs last week, I've logged some bugs yesterday and I'll log more bugs today!"}
+      // textToShow={`Hello world`}
+      author={'sabados, Domingos'}
+      width='1280'
+      height='720'
+    />
+    // <AnimatedCanvas />
   );
 }
 
